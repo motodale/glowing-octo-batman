@@ -1,7 +1,14 @@
 
+teamorder = []
 
-teamorder = ["dale", "trever", "will", "eddie", "mary", "steve", "austin", "gonzalo"]
+puts "enter a name, if no name hit enter"
+name = ''
 
+while name != 'done'
+  name = gets.chomp
+  teamorder.push name
+end
+teamorder.pop
 teams = teamorder.shuffle
 
-puts teams
+p teams
