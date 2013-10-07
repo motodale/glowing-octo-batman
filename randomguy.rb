@@ -10,5 +10,17 @@ while name != 'done'
 end
 teamorder.pop
 teams = teamorder.shuffle
+num = teams.size / 2
+final = teams.each_slice(num).to_a
 
-p teams
+def coin
+  side = rand(100)
+  if side >= 50
+    puts "team 1 gets blue and team 2 gets red"
+  else
+    puts "team 1 gets red and team 2 gets blue"
+  end
+end
+
+p final
+coin
