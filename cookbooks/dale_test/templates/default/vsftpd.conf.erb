@@ -1,0 +1,9 @@
+anonymous_enable = <%= node[:vsftpd][:anonymous_enable]  %>
+local_umask = <%= node[:vsftpd][:local_umask] %>
+listen = <%= node[:vsftpd][:listen] %>
+local_enable = <%= node[:vsftpd][:local_enable] %>
+write_enable = <%= node[:vsftpd][:write_enable] %>
+dirmessage_enable = <%= node[:vsftpd][:dirmessage_enable] %>
+use_localtime = <%= node[:vsftpd][:use_localtime] %>
+xferlog_enable = <%= node[:vsftpd][:xferlog_enable] %>
+connect_from_port_20 = <%= node[:vsftpd][:connect_from_port_20] %>
